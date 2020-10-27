@@ -1,53 +1,42 @@
-<h1 align="center">RedM TypeScript Boilerplate</h1>
+<h1 align="center">RedM Simple Spawner</h1>
 
 <p align="center">
-  <i>A TypeScript Boilerplate for RedM, forked from <a target="_blank" href="https://github.com/d0p3t/fivem-ts-boilerplate">FiveM-TS-Boilerplate</a></i>
+  <i>Simple and easily configurable spawning system for RedM.</i>
   <br>
   <br>
-  <a href="https://github.com/Ascent-Gaming/redm-ts-boilerplate/blob/master/LICENSE">
+  <a href="https://github.com/Ascent-Gaming/redm-simple-spawner/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat" alt="License: MIT">
   </a>
-  <a href="https://github.com/Ascent-Gaming/redm-ts-boilerplate/commits/master">
-    <img src="https://img.shields.io/github/last-commit/Ascent-Gaming/redm-ts-boilerplate.svg?style=flat" alt="Last commit">
+  <a href="https://github.com/Ascent-Gaming/redm-simple-spawner/commits/master">
+    <img src="https://img.shields.io/github/last-commit/Ascent-Gaming/redm-simple-spawner.svg?style=flat" alt="Last commit">
   </a>
   <a href="">
-    <img src="https://img.shields.io/github/workflow/status/Ascent-Gaming/redm-ts-boilerplate/Node.js%20CI" alt="Workflow">
+    <img src="https://img.shields.io/github/workflow/status/Ascent-Gaming/redm-simple-spawner/Node.js%20CI" alt="Workflow">
   </a>
 </p>
 
-This is a boilerplate for creating resources in TypeScript, for RedM. From its fork, its dependencies have been upgraded and the `fxmanifest.lua` updated to give `rdr3` compatability.
+## Overview
 
-***By using this boilerplate you agree to the following:***
-> I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.
+Provides a simple and configurable spawning system. This mainly exist as a way of seperating spawning functionality from the [`redm-user`](https://github.com/Ascent-Gaming/redm-user) resource. The gain being, restarts to the `user` resource will not respawn the player while a restart to the `simple-spawner` resource will.
+
+## Dependencies
+
+This resource depends on the following resource(s) and subsequently their dependencies.
+
+- [`redm-user`](https://github.com/Ascent-Gaming/redm-user)
 
 ## Installation
 
+1. Ensure you have installed all of this resource's **Dependencies**.
 1. `clone` or download this repository into your server's `./resources/` directory.
 2. Rename the directory (or specify a name when `cloning`) to your liking.
 3. Aftering ensuring its installed, run `yarn install` in this resources's directory.
-4. Create your next RDR3 masterpiece using TypeScript!
-5. Build the resource using `yarn build`.
-6. `ensure` this resource *after* any of its dependencies.
+4. Build the resource using `yarn build`.
+5. `ensure` this resource *after* any of its dependencies.
 
-### Development
-Use `yarn run watch` to watch files during development.
+## Features
 
-### Production
-Build your production ready code with `yarn run build`.
-
-This will build the client and server script with the `--mode production` flag.
-
-### Automatic Builds (Optional)
-The `fxmanifest.lua` is not setup to automatically build upon first FXServer start. If you'd like to setup automatic builds you must add the following to your `fxmanifest.lua`.
-
-```lua
-dependency 'yarn'
-dependency 'webpack'
-
-webpack_config 'webpack.config.js'
-```
-
-However, due to the speed performance of the pre-packaged webpack/yarn of cfx-server-data, we suggest you don't do this and build manually as described previously ("Production").
+You can configure the starting spawn point and various other features from the `config.json` file. You should *not* need to touch any source code to get the range of this resource's intended offerings.
 
 ## License
 This product is MIT licensed. Please make sure you give credit and include this license in your product.
