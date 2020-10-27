@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "software.locktech.redm-simple-spawner.schema",
+  "title": "RedM Simple Spawner Schema",
+  "type": "object",
+  "definitions": {
+    "coordinate": {
+      "title": "Coordinate",
+      "properties": {
+        "pos": {
+          "title": "Position",
+          "type": "number"
+        },
+        "flipAxis": {
+          "title": "Flip Axis",
+          "description": "As defined for any FiveM/RedM Native.",
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "allOf": [{ "$ref": "https://raw.githubusercontent.com/Ascent-Gaming/redm-ts-boilerplate/config.schema/redm-ts-boilerplate.schema.json" }],
+  "properties": {
+    "x": { "$ref": "#/definitions/coordinate" },
+    "y": { "$ref": "#/definitions/coordinate" },
+    "z": { "$ref": "#/definitions/coordinate" },
+    "heading": {
+      "title": "Heading",
+      "type": "number"
+    },
+    "clearEntities": {
+      "title": "Clear Entities",
+      "description": "Whether or not to clear the entities in the surrounding area the player will spawn.",
+      "type": "boolean"
+    },
+    "freezePlayer": {
+      "title": "Freeze Player",
+      "description": "Whether or not the player should be frozen upon first spawning in.",
+      "type": "boolean"
+    }
+  },
+  "required": [
+
+  ]
+}
