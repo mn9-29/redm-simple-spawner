@@ -1,12 +1,12 @@
 fx_version 'cerulean'
 games {'rdr3'}
 
-name 'TypeScript Boilerplate'
-description 'An updated TypeScript boilerplate for RedM'
+name 'Simple Spawner'
+description 'Simple and easily configurable spawning system for RedM.'
 author 'Ryan "Standal" Lockard'
 
 dependencies {
-  
+
 }
 
 client_scripts {
