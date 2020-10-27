@@ -38,5 +38,15 @@ This resource depends on the following resource(s) and subsequently their depend
 
 You can configure the starting spawn point and various other features from the `config.json` file. You should *not* need to touch any source code to get the range of this resource's intended offerings.
 
+### `simple-spawner:playerSpawned` Event
+
+> This event is fired client to client and server.
+
+An `event` fired once a player has been successfully spawned in.
+
+This event does not pass any arguments.
+
+***Note: This event will fire each time the `simple-spawner` resource is restarted.***
+
 ## License
 This product is MIT licensed. Please make sure you give credit and include this license in your product.
