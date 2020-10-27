@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Ascent-Gaming/redm-ts-boilerplate/config.schema/redm-ts-boilerplate.schema.json",
+  "$schema": "https://raw.githubusercontent.com/Ascent-Gaming/redm-simple-spawner/config.schema/config.schema.json",
   "resource": {
     "name": "Simple Spawner",
     "version": "0.0.1"
