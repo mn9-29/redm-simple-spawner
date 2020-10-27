@@ -23,6 +23,9 @@ const SpawnPlayer = (playerPed) => {
     )
     FreezeEntityPosition(playerPed, Config.simpleSpawner.freezePlayer)
 
+    emit("simple-spawner:playerSpawned")
+    emitNet("simple-spawner:playerSpawned")
+
     // Set a global variable to track the fact a user is spawned in.
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     UserSpawned = true
