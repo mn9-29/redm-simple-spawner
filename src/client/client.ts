@@ -45,4 +45,4 @@ const onGetIsNetworkActive = (isNetworkActive: boolean) => {
   }
 }
 
-emit("user:isClientNetworkActive", onGetIsNetworkActive)
+emit("user:isNetworkActive", onGetIsNetworkActive)
