@@ -21,22 +21,26 @@
   },
   "allOf": [{ "$ref": "https://raw.githubusercontent.com/Ascent-Gaming/redm-ts-boilerplate/config.schema/redm-ts-boilerplate.schema.json" }],
   "properties": {
-    "x": { "$ref": "#/definitions/coordinate" },
-    "y": { "$ref": "#/definitions/coordinate" },
-    "z": { "$ref": "#/definitions/coordinate" },
-    "heading": {
-      "title": "Heading",
-      "type": "number"
-    },
-    "clearEntities": {
-      "title": "Clear Entities",
-      "description": "Whether or not to clear the entities in the surrounding area the player will spawn.",
-      "type": "boolean"
-    },
-    "freezePlayer": {
-      "title": "Freeze Player",
-      "description": "Whether or not the player should be frozen upon first spawning in.",
-      "type": "boolean"
+    "simpleSpawner": {
+      "properties": {
+        "x": { "$ref": "#/definitions/coordinate" },
+        "y": { "$ref": "#/definitions/coordinate" },
+        "z": { "$ref": "#/definitions/coordinate" },
+        "heading": {
+          "title": "Heading",
+          "type": "number"
+        },
+        "clearEntities": {
+          "title": "Clear Entities",
+          "description": "Whether or not to clear the entities in the surrounding area the player will spawn.",
+          "type": "boolean"
+        },
+        "freezePlayer": {
+          "title": "Freeze Player",
+          "description": "Whether or not the player should be frozen upon first spawning in.",
+          "type": "boolean"
+        }  
+      }
     }
   },
   "required": [
