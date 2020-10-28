@@ -1,9 +1,9 @@
 {
-  "name": "redm-ts-boilerplate",
+  "name": "redm-simple-spawner",
   "version": "1.0.0",
-  "description": "Typescript Boilerplate for RedM",
+  "description": "Simple and easily configurable player spawning system for RedM.",
   "main": "index.js",
-  "repository": "https://github.com/Ascent-Gaming/redm-ts-boilerplate",
+  "repository": "https://github.com/Ascent-Gaming/redm-simple-spawner",
   "contributors": [
     {
       "name": "d0p3t",
